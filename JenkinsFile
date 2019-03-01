@@ -1,0 +1,17 @@
+pipeline{
+    agent any{
+    stages{
+          stage('Testing the pipeline'){
+            steps{
+                echo 'Test1'
+                sh 'mkdir from-Jenkins'
+                sh 'touch From-Jenkins/test.txt'
+                }
+           }
+             }
+}
+
+
+
+
+
